@@ -1,2 +1,2 @@
-# autotools_basic
+# atools
 basic C code for fiddling with gnulib
