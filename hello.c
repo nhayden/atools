@@ -30,7 +30,7 @@ void printBlksize(const char* fname) {
     printf("blksize: ");
     struct stat statbuf;
     stat(fname, &statbuf);
-    printf("%lu\n", statbuf.st_blksize);
+    printf("%lu\n", ST_BLKSIZE(statbuf));
 }
  
 int main(int argc, char* argv[])
