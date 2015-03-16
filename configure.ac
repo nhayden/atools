@@ -9,6 +9,8 @@ AC_CONFIG_HEADERS(config.h)
 
 # Checks for programs.
 AC_PROG_CC
+gl_EARLY
+gl_INIT
 
 # Checks for libraries.
 
@@ -21,5 +23,5 @@ AC_CHECK_MEMBERS([struct stat.st_blksize])
 # Checks for library functions.
 AC_CHECK_FUNCS([gettimeofday stat])
 
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([Makefile lib/Makefile])
 AC_OUTPUT

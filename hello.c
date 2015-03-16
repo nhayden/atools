@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <sys/time.h>
 #include <sys/stat.h>
+#include "stat-size.h"
  
 double get_sec_since_epoch()
 {
