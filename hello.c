@@ -14,13 +14,18 @@ double get_sec_since_epoch()
     sec += tv.tv_usec / 1000000.0;
     return sec;
 }
- 
-int main(int argc, char* argv[])
-{
+
+void printTime() {
     #ifdef HAVE_GETTIMEOFDAY
     printf("%f\n", get_sec_since_epoch());
     #else
     printf("don't know; gettimeofday not avail\n");
     #endif
+    return 0;
+}
+ 
+int main(int argc, char* argv[])
+{
+    printTime();
     return 0;
 }

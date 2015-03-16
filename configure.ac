@@ -16,7 +16,7 @@ AC_PROG_CC
 AC_CHECK_HEADERS([sys/time.h])
 
 # Checks for typedefs, structures, and compiler characteristics.
-AC_CHECK_MEMBERS([struct stat.st_blksize])
+
 
 # Checks for library functions.
 AC_CHECK_FUNCS([gettimeofday])
